@@ -4,7 +4,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" x:Class="RevitTemplate.Ui"
     mc:Ignorable="d"
-    Title="Template Application" Height="319.416" Width="668.137" WindowStartupLocation="CenterScreen"
+    Title="Mastermodel Import" Height="319.416" Width="668.137" WindowStartupLocation="CenterScreen"
     Background="White"
     Foreground="Gray" FontSize="12"
     Name="DebugUtility" Icon="Resources/revit-wire.ico">
@@ -25,7 +25,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/code.png" VerticalAlignment="Center" HorizontalAlignment="Center"
                                Height="14" />
-                        <Label Content="Debug" />
+                        <Label Content="Wall Types" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
@@ -40,7 +40,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Resources/terminal.png" VerticalAlignment="Center" HorizontalAlignment="Center"
                                Height="13" />
-                        <Label Content="Code" />
+                        <Label Content="Floor Types" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
@@ -80,16 +80,6 @@
                     <TextBox x:Name="TbCollectionViewport" HorizontalAlignment="Left" Height="21" Margin="11,120,0,0"
                              TextWrapping="Wrap" Text="ViewportData" VerticalAlignment="Top" Width="105" />
                 </Grid>
-            </TabItem>
-            <TabItem x:Name="TabWip" Padding="5,0,5,0">
-                <TabItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Resources/flask.png" VerticalAlignment="Center" HorizontalAlignment="Center"
-                               Height="13" />
-                        <Label Content="WIP" />
-                    </StackPanel>
-                </TabItem.Header>
-                <Grid />
             </TabItem>
         </TabControl>
         <TabControl HorizontalAlignment="Left" Width="223" BorderBrush="{x:Null}" Background="{x:Null}"
